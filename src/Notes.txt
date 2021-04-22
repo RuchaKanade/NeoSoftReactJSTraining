@@ -1,0 +1,103 @@
+whenever we run => npm install in any folder it looks for package.json
+file in that folder and installas all packages mention in depencies
+
+If we have to share project with anyone
+
+we will remove nodes_modules other developer will run npm install
+
+All code lies in src folder i.e. source code
+
+All the assets (Images or icons) are stored in public folder
+even index.html is also in public folder.
+
+In a js file can we write html tag??
+
+JSX ??
+Javascript xml
+
+It allows you to write html in js file
+
+React provides you component based structure
+What is component ?
+
+Whatever you see is a component
+
+view/html => component
+
+Technically returned html is a component
+
+So wehen function returns html it becomes component
+
+How to create COMPONENT :
+Create a function and return view/html
+And export that function
+
+//Component first letter should be Capital
+//Than use that exported component as html tag in app.js and import in the app.js
+
+Reusing a component => we can use that component tag multiple times
+
+
+In React All the html tags must be closed
+eg : <input/>
+
+In general cake component should be designed in such a manner that it should show diffrent
+show different data every times
+It will recieve data as i/p
+
+whenever we want to pass data as input to a component we use a mechanism known as props
+
+props ???
+<component name="something" price="something" image="something"/>
+
+all the above 3 things passed to that component are known as 
+passing the props.
+
+How do we call functions in React
+
+//eventname  = {handlerfunction}
+
+js events onclick , onchange, etc...
+
+How do we Create Component???
+=> By creating a function and by export , those are known as 
+=> Functional/stateless components.
+
+State full components => which are class based
+
+props is an object which can't be chnaged , Functional components can't be changed.
+
+class based components have their state
+
+state is an Object.
+
+In layment terms state is data at some point of time.
+
+State will only initialize at once and than it will be update.
+
+if we initialize state = {onlineusers:0}
+
+this.state = {} => will only initialize at once 
+
+Updation or state
+this.setstate() => if we want to update state or change state value // it is used to udate the screen
+
+State of component or class based component provide us several life cycle methods
+
+which at various stages invoked automatically telling us that component has reach that stage
+
+we cant update the functional component
+** React Hooks **
+=> some methods which provides state feature to functional component
+If anything we want to change;
+and change can only happen when state is changing
+
+we can use the state in function component also using Hooks
+usestate() //method ehich provide state feature
+
+**Conditional rendering means rendering some element based on the Conditional
+eg I want lavel to render if and only when user has some value
+
+***<Link>***
+for all element whatever element you click want to go somewhere
+wrap that element in <link> tag //It is available in Router packagewe tell link tag the path
